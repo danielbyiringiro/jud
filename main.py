@@ -69,7 +69,7 @@ def get_recco(user_id):
 def show_results(purchases):
     for _, row in purchases.iterrows():
         image_1 = row['image_1']
-        path_1 = f"/opt/lampp/htdocs/afrikana/assets/images/products/{image_1}"
+        path_1 = f"products/{image_1}"
         image_1 = Image.open(path_1)
 
         col1, col2 = st.columns([1,2])
